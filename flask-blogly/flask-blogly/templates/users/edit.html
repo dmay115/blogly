@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}New User{% endblock %} {% block
+content %}
+<h1>Edit User</h1>
+<form method="POST">
+    <div>
+        <h3>First Name</h3>
+        <input
+            type="text"
+            name="first_name"
+            placeholder="{{ user.first_name }}"
+        />
+    </div>
+
+    <div>
+        <h3>Last Name</h3>
+        <input
+            type="text"
+            name="last_name"
+            placeholder="{{ user.last_name }}"
+        />
+    </div>
+
+    <div>
+        <h3>Profile Picture</h3>
+        <input
+            type="text"
+            name="image_url"
+            placeholder="Provide Image of This User"
+        />
+    </div>
+    <div>
+        <button type="submit">Submit Change</button>
+    </div>
+</form>
+{% endblock %}
